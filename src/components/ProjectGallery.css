@@ -1,0 +1,65 @@
+/* src/components/ProjectGallery.css */
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.project-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h3 {
+    color: violet; /* Change heading color to violet */
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.project-link,
+.view-image-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.project-link:hover,
+.view-image-button:hover {
+    background-color: #555;
+}
+
+.view-image-button {
+    margin-left: 10px; /* Ensure button spacing looks good */
+}
+.project-card h3 {
+    color: violet !important; /* Force the violet color */
+}

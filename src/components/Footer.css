@@ -1,0 +1,84 @@
+/* Footer.css */
+
+.footer {
+    background-color: #333; /* Background color for footer */
+    color: white; /* Text color */
+    padding: 40px; /* Padding around footer */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    min-height: 400px; /* Ensure the footer has enough height */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.contact-form-footer {
+    margin: 20px auto; /* Center the contact form */
+    max-width: 600px; /* Maximum width for the form */
+    width: 100%; /* Take full width within max-width */
+}
+
+.contact-form-footer h3 {
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-size: 24px; /* Larger font size for the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding inside fields */
+    border: 1px solid #ccc; /* Border for fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.submit-button {
+    background-color: #2a9d8f; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    margin-top: 10px; /* Add space above the button */
+}
+
+.submit-button:hover {
+    background-color: #2a9d8f; /* Darker button color on hover */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    margin-top: 10px; /* Space above the message */
+}
+
+.success-message {
+    color: green; /* Success message color */
+    margin-top: 10px; /* Space above the message */
+}
+
+.contact-details {
+    margin-top: 40px; /* Space above contact details */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+}
+
+.contact-details p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+.social-media {
+    margin-top: 20px; /* Space above social media section */
+}
+
+.social-media a {
+    margin-right: 10px; /* Space between social media links */
+    color: white; /* Social media link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

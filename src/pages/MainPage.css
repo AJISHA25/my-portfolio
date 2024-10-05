@@ -1,0 +1,75 @@
+/* src/pages/MainPage.css */
+
+/* src/pages/MainPage.css */
+.section {
+    padding-top: 120px; /* Ensures section content is not hidden behind the navbar */
+    padding-bottom: 60px; /* Adds space at the bottom of each section */
+    margin: 10px 0; /* Reduces space between sections */
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center; /* Center-align section content */
+}
+
+
+/* Style specifically for the home section */
+#home {
+    background-image: url('../components/image/bg.jpg'); /* Update this path to your image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color:white;/* Change text color for contrast */
+    padding: 80px 20px; /* More padding for better layout */
+    min-height: 400px; /* Ensure it has a minimum height */
+}
+
+#home h1{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+#home p{
+    font-size: 18px;
+    color: white;
+}
+
+/* Specific styles for other sections */
+#about, #skills, #projects {
+    background-color: #f4f4f4; /* Fallback color for other sections */
+    margin-top: 20px; /* Optional: Add a bit more space for aesthetics */
+    padding: 40px; /* Maintain padding in other sections */
+}
+
+/* Skills Section Styles */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of skill cards */
+    justify-content: center; /* Center align the skill cards */
+    gap: 20px; /* Space between skill cards */
+    color:#f4f4f4;
+}
+
+.skill-card {
+    background-color: #2a9d8f; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside each card */
+    width: 150px; /* Fixed width for uniformity */
+    text-align: center; /* Center the text inside the card */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* MainPage.css */
+
+.section {
+    padding-top: 100px; /* Adjust based on navbar height */
+    scroll-margin-top: 100px; /* Modern browsers handle scroll-margin-top */
+}
+
+/* Add your other existing styles here */
+

@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between hamburger and nav-links */
+    align-items: center; /* Vertically center the content */
+    padding: 15px 30px; /* Padding around the navbar */
+    background-color: #2a9d8f; /* Background color */
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none; /* Hide hamburger icon by default */
+    flex-direction: column; /* Stack bars vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.hamburger .bar {
+    height: 3px; /* Bar height */
+    width: 25px; /* Bar width */
+    background-color: white; /* Bar color */
+    margin: 4px 0; /* Space between bars */
+}
+
+/* Center the navigation links */
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links in a row */
+    gap: 20px; /* Space between links */
+    justify-content: center; /* Center links horizontally */
+    margin: 0 auto; /* Center the links in the navbar */
+    text-align: center; /* Align text center */
+    flex-grow: 1; /* Take up the remaining space between hamburger and right edge */
+}
+
+.nav-links li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger icon on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default on small screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position the menu absolutely */
+        top: 60px; /* Position just below the navbar */
+        right: 0; /* Align to the right */
+        background-color: #2a9d8f; /* Same background as navbar */
+        width: 100%; /* Full width */
+        text-align: center; /* Center links */
+        z-index: 999; /* Above other elements */
+    }
+
+    .nav-links.open {
+        display: flex; /* Show the menu when open */
+    }
+}
